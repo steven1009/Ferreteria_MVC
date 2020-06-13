@@ -16,7 +16,42 @@ namespace Ferreteria_MVC
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Account", action = "Login", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "Categorias",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Categorias", action = "Index", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "DetallaVentas",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "DetalleVentas", action = "Index", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "Empleados",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Empleadoes", action = "Index", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "Facturas",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Facturas", action = "Index", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "Personas",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Personas", action = "Index", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "Productos",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Productoes", action = "Index", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "TipoPago",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "TipoPagoes", action = "Index", id = UrlParameter.Optional }
             );
             routes.MapRoute(
                 name: "Ventas",

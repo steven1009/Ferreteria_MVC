@@ -26,6 +26,49 @@
                     <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Ventas", "Index", "Ventas")</li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell fa-fw"></i>Configuración<i class="fa fa-caret-down"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>@Html.ActionLink("Ventas", "Index", "Ventas")</li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-users fa-fw"></i> 3 Registro Vendedores
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-book fa-fw"></i> Reporte Facturas
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-tv fa-fw"></i> Reporte Artículos
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <div>
+                                        <i class="fa fa-shopping-cart fa-fw"></i>Reporte Ventas
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="divider"></li>
+
+                        </ul>
+                        <!-- /.dropdown-alerts -->
+                    </li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
